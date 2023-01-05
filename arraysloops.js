@@ -76,18 +76,21 @@ array1.push(16, 3);
 array1.sort();
 console.log(array1[2]);
 
-
 // create a variable called myTodoList that holds an empty array
-var myTodoList = [];
+let myTodoList = [];
 // add three todo items to the array using a built-in array method
-
+myTodoList.push("dishs", "laudry", "mop")
+console.log(myTodoList);
 // remove the second item in the array
-
+myTodoList.splice(1,1);
+console.log(myTodoList);
 // create another array, yourTodoList, and add two todo items
-
+var yourTodoList = ["homework", "make bed"];
 // create another array, ourTodoList
+var ourTodoList = [];
 // combine myTodoList and yourTodoList into ourTodoList
-
+ourTodoList = [...myTodoList, ...yourTodoList, "wash the car"];
+console.log(ourTodoList);
 
 // sort the following array from Z-A
 
