@@ -45,13 +45,29 @@ function calculateAverage(namespar) {
  }
     return count / total;
 }
-console.log("2.a.", calculateAverage(names));
+console.log("2.a", calculateAverage(names));
 
-// // console.log
+let nameTogether = ""
+for(let index = 0; index < names.length; index++ ){
+    console.log("index:", index, "itrates through array", names[index]);
+    nameTogether += names[index] + " ";
+}
 
-// //  console.log(names[names.length -1]);
-// //  console.log(names[0]);
+console.log("2.a", nameTogether);
 
-// //  var nameLengths
+//  console.log("3", names[names.length -1]);
+//  console.log("4", names[0]);
+ 
+//  var namesArray = ["Kelly", "Sam", "Kate"];
+//  var nameLengths = [5, 3, 4];
+
+let nameLengths = [];
+ for (i = 0; i < names.length; i++) {
+ nameLengths.push(names[i].length); 
+ }
+console.log("5", nameLengths);
+
+
+
 
 
