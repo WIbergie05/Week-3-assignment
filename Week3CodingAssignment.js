@@ -28,7 +28,7 @@ function calculateAverage(ages) {
         total += item;
         count++;
     });
-    return total / count;
+    return count / total;
 }
 console.log("1.c.", calculateAverage(ages));
 
@@ -55,8 +55,8 @@ for(let index = 0; index < names.length; index++ ){
 
 console.log("2.a", nameTogether);
 
-//  console.log("3", names[names.length -1]);
-//  console.log("4", names[0]);
+ console.log("3", names[names.length -1]);
+ console.log("4", names[0]);
  
 //  var namesArray = ["Kelly", "Sam", "Kate"];
 //  var nameLengths = [5, 3, 4];
@@ -162,8 +162,8 @@ function willBuyDrink(isHotOutside, moneyInPocket) {
         "13. ",
         "There are",
         totalMoviesRemaining,
-        "movies spots remaining."
+        "movies remaining."
       );
     } else console.log("You watched all the movies!"); 
   }
-  allMovies(50, 50); 
+  allMovies(5, 5); 
