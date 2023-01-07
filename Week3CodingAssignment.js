@@ -67,7 +67,103 @@ let nameLengths = [];
  }
 console.log("5", nameLengths);
 
+let sumTogether = 0;
+for (let nameLength of nameLengths) {
+    sumTogether += nameLength;
+  }
+  console.log("6.", sumTogether);
+
+  function myFunction(word, n) {
+    let wordTogether = "";
+    for (let i = 0; i < n; i++) {
+        wordTogether += word; 
+    }
+    console.log("7.", wordTogether);
+    return wordTogether;
+  }
+  myFunction("Hello", 3);
+
+  let fullName = "";
+  function myName(firstName, lastName) {
+    fullName = firstName + " " + lastName;
+    console.log("8.", fullName);
+  return fullName;
+}
+
+myName("Erin", "Bergmann");
+
+const arrayOfNumbers = [15, 36, 47, 55, 78, 99];
+function sumNumbersArray(numbersArray) {
+  let total = 0;
+
+  for (let i = 0; i < numbersArray.length; i++) {
+    total += arrayOfNumbers[i];
+}
+if (total > 100) {
+  console.log("9. True", total);
+  return true;
+} else {
+  console.log("Your number is too low!");
+  return false;
+}
+}
+sumNumbersArray(arrayOfNumbers);
+
+function numbers() {
+    let arrayAverage = 0;
+    for (let number of arrayOfNumbers) {
+      arrayAverage += number;
+    }
+    average = arrayAverage / arrayOfNumbers.length; 
+    console.log("10.", average);
+  }
+  numbers();
+
+  let array1 = [5, 17, 27, 75];
+let array2 = [9, 11, 26, 58];
 
 
+function array(arrayParam1, arrayParam2) {
+  let sumArray1 = 0;
+  for (let number of arrayParam1) {
+    
+    sumArray1 += number; 
+  }
+  let arrAverage1 = sumArray1 / arrayParam1.length;
+  let sumArray2 = 0;
+  for (let number of arrayParam2) {
+    sumArray2 += number;
+  }
 
+  let arrAverage2 = sumArray2 / arrayParam2.length;
+  if (arrAverage1 > arrAverage2) {
+    console.log("11", true, arrAverage1, arrAverage2);
+    return true;
+  } else {
+    console.log("11", false, arrAverage1, arrAverage2);
+    return false;
+  }
+}
+array(array1, array2);
 
+function willBuyDrink(isHotOutside, moneyInPocket) {
+    if (isHotOutside === true && moneyInPocket === 10.5) {
+      console.log("12", isHotOutside);
+      return true;
+    }
+  }
+  willBuyDrink(true, 10.5);
+
+  function allMovies(availableMovies, movieToken) {
+    let totalMoviesRemaining = (availableMovies -= movieToken);
+  
+    if (totalMoviesRemaining > 0) {
+      console.log(
+        "13. ",
+        "There are",
+        totalMoviesRemaining,
+        "movies spots remaining."
+      );
+    } else console.log("You watched all the movies!"); 
+  }
+  allMovies(50, 50); 
