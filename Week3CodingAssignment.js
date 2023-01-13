@@ -28,14 +28,14 @@ function calculateAverage(ages) {
         total += item;
         count++;
     });
-    return count / total;
+    return total / count;
 }
 console.log("1.c.", calculateAverage(ages));
 
 var names = ['Sam', 'Tommy', 'Tim', 'Sally', 'Buck', 'Bob']
 console.log("2.", names);
 
-function calculateAverage(namespar) {
+function calculateAverage1(namespar) {
     var total = namespar.length;
     var count = 0;
     for (let index = 0; index < namespar.length; index++){
@@ -45,7 +45,7 @@ function calculateAverage(namespar) {
  }
     return count / total;
 }
-console.log("2.a", calculateAverage(names));
+console.log("2.a", calculateAverage1(names));
 
 let nameTogether = ""
 for(let index = 0; index < names.length; index++ ){
